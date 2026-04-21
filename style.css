@@ -10,6 +10,9 @@ body {
     "aside main" 
     "footer footer";
     min-height: 100vh;
+    font-family: cambria;
+    background-color: rgb(15 15 15);
+    color:white;
 }
 
 nav{
@@ -28,6 +31,25 @@ nav{
     list-style-type: none;
 }
 
+#Contents > li {
+    background-color: rgb(243, 243, 243);
+    color: white;
+    border-radius: 3px;
+    padding: 10px 20px;
+    transition: 0.30s ease, transform 1s ease;
+   
+}
+
+#Contents > li:hover {
+     box-shadow: 0px 0px 10px 1px white;
+}
+
+
+a:link, a:visited {
+  color: black; /* or your specific color, e.g., black */
+  text-decoration: none;
+}
+
 h2 {
     margin-right: auto;
 }
@@ -38,6 +60,13 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
 }
 
 h1, p{
@@ -56,8 +85,4 @@ main {
 
 footer {
     grid-area: footer;
-}
-
-header, aside, main, footer, nav {
-    border: solid black 1px
 }
