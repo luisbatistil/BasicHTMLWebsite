@@ -78,6 +78,7 @@ h1, #description{
 aside {
     grid-area: aside;
     overflow: scroll;
+    padding: 20px;
     
 }
 
@@ -97,6 +98,12 @@ aside::-webkit-scrollbar {
     margin-right: 10px;
 
     display: inline-block;
+}
+
+.Card:hover {
+    transform: translateY(-10px);
+    transition: transform 0.5s ease;
+    box-shadow: 0px 0px 40px 1px rgb(28, 202, 255);
 }
 
 .headtipro {
