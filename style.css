@@ -136,6 +136,7 @@ main::-webkit-scrollbar {
  
 }
 
+
 footer {
     grid-area: footer;
     background-color: white;
@@ -143,10 +144,47 @@ footer {
     margin-top: 10px;
 }
 
+#Recommendation {
+    display: flex;
+    justify-content: center;
+}
+
 #review-container {
     background-color: rgb(100, 98, 98);
     padding: 20px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
 }
+
+.cardre {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    
+    height: 230px;
+    width: 200px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: start;
+}
+
+.comment {
+    margin-top: 40%;
+    margin-bottom: auto;
+}
+.prof {
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+.occupation {
+    margin-top: 0;
+    font-size: 10px;
+}
+
 
 #contactsme {
     display: flex;
