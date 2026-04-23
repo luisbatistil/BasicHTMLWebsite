@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin-right: 40px;
     margin-left: 40px;
@@ -22,6 +26,8 @@ nav{
     flex-direction: row;
     align-items: center;
     padding: 10px;
+    background-color: rgb(63, 63, 63);
+    border-radius: 10px;
 }
 
 #Contents {
@@ -120,8 +126,53 @@ aside::-webkit-scrollbar {
 
 main {
     grid-area: main;
+    overflow: scroll;
+    padding: 20px;
+    
+}
+
+main::-webkit-scrollbar {
+  display: none;
+ 
 }
 
 footer {
     grid-area: footer;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+}
+
+#review-container {
+    background-color: rgb(100, 98, 98);
+    padding: 20px;
+}
+
+#contactsme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.contacts {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2%;
+    justify-content: center;
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+#copyright {
+    display: flex;
+    align-items: center;
+    background-color: rgb(15 15 15);
+    color: white;
+    justify-content: center;
+    padding: 4px;
 }
